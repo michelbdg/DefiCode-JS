@@ -3,7 +3,7 @@ body{
     padding-left: 0;
 }
 
-.container-notes{
+#container-notes{
     display: grid;
     grid-template-columns: repeat(auto-fill, 150px);
     padding: 20px;
