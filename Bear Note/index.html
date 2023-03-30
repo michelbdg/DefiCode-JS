@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,31 +8,60 @@
     <title>Bear Notes</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
 
     <header>
-<div class="logo"></div>
-<div class="search-bar"></div>
-<div class="menu"></div>
+        <div class="logo"></div>
+        <div class="search-bar"></div>
+        <div class="menu"></div>
     </header>
+    <div class="contenu">
+        <!-- Pour créer des post-its -->
+        <div class="container-notes">
+            <textarea class="note">Exemple random</textarea>
+            <textarea class="note">Exemple random</textarea>
+            <textarea class="note">Exemple random</textarea>
+            <textarea class="note">Exemple random</textarea>
+            <textarea class="note">Exemple random</textarea>
+            <button class="add-note" type="button">+</button>
+        </div>
 
-    <!-- Pour créer des post-its -->
-    <div class="container-notes">
-        <textarea class="note">Exemple random</textarea>
-        <textarea class="note">Exemple random</textarea>
-        <textarea class="note">Exemple random</textarea>
-        <textarea class="note">Exemple random</textarea>
-        <textarea class="note">Exemple random</textarea>
-        <button class="add-note" type="button">+</button>
+        <!-- Pour créer une to-do-list -->
+        <div class="container-list">
+            <header>
+                <h3>To Do List</h3>
+                <form id="new-task-form"></form> 
+                <input type="text" id ="new-task-input" placeholder="Qu'avez vous de prévu ?"/>
+                
+                <input type="submit" id="new-task-submit" value="Rajouter une tache"/>
+            </header>
+
+            <main>
+
+                <section class="task-list">
+                    <h4>Taches</h4>
+                    <div id="tasks">
+                        <div class="task">
+                            <div class="content">
+                                <input type="text" class="text" value="Exemple" readonly/>
+                            </div>
+                            <div class="actions">
+                                <button class="edit">Editer</button>
+                                <button class="delete">Supprimer</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+            </main>
+        </div>
     </div>
 
-    <!-- Pour créer une to-do-list -->
-    <div class="container-list"></div>
-    
 
 
-
-<script src="./list.js"></script>
-<script src="./notes.js"></script>
+    <script src="./list.js"></script>
+    <script src="./notes.js"></script>
 </body>
+
 </html>
