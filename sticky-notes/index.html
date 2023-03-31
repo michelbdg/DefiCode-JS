@@ -10,43 +10,44 @@
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <header>
-        <div class="logo"></div>
-        <div class="search-bar"></div>
-        <div class="menu"></div>
-    </header>
-    <!------ Navbar ------>
-    <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
-            <h5 class="text-white h4">Bear Notes</h5>
-            <nav class="navbar bg-body-tertiary">
-                <div class="container-fluid">
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                  </div>
-            </nav>
-            <div class="list-group">
-                <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
-                    Home
-                </button>
-                <button type="button" class="list-group-item list-group-item-action">Shortcuts</button>
-                <button type="button" class="list-group-item list-group-item-action">Notes</button>
+        <div class="logo">
+            <img src="Sans titre.png" alt="logo Bear">
+        </div>
+        <!------ Navbar ------>
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+                <h5 class="text-white h4">Bear Notes</h5>
+                <nav class="navbar bg-body-tertiary">
+                    <div class="container-fluid">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
+                <div class="list-group">
+                    <button type="button"  href="index.html" class="list-group-item list-group-item-action active" aria-current="true">
+                        Home
+                    </button>
+                    <button type="button" class="list-group-item list-group-item-action">Shortcuts</button>
+                    <button type="button" class="list-group-item list-group-item-action">Notes</button>
+                </div>
+                <span class="text-body-secondary">Toggleable via the navbar brand.</span>
             </div>
-            <span class="text-body-secondary">Toggleable via the navbar brand.</span>
         </div>
-    </div>
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-    </nav>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
     <div class="contenu">
         <!-- Pour créer des post-its -->
         <div id="container-notes">
@@ -57,22 +58,20 @@
             <textarea class="note">Exemple random</textarea>
             <button class="add-note" type="button">+</button>
         </div>
-
         <!-- Pour créer une to-do-list -->
         <div class="container-list">
-            <header>
-                <h3>To Do List</h3>
-                <form id="new-task-form"></form>
-                <input type="text" id="new-task-input" placeholder="Qu'avez vous de prévu ?" />
-                <input type="submit" id="new-task-submit" value="Rajouter une tache" />
-            </header>
+            <h3>To Do List</h3>
+            <form id="new-task-form">
+                <input type="text" id="new-task-input" placeholder="Qu'avez vous de prévu ?"/>
+                <input type="submit" id="new-task-submit" value="Rajouter une tache"/>
+            </form>
             <main>
                 <section class="task-list">
                     <h4>Taches</h4>
                     <div id="tasks">
                         <div class="task">
                             <div class="content">
-                                <input type="text" class="text" value="Exemple" readonly/>
+                                <input type="text" class="text" placeholder="Exemple" readonly/>
                             </div>
                             <div class="actions">
                                 <button class="edit">Editer</button>
@@ -81,15 +80,14 @@
                         </div>
                     </div>
                 </section>
-
             </main>
         </div>
     </div>
     <script src="./list.js"></script>
     <script src="./notes.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
-        crossorigin="anonymous">
-    </script>
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous">
+        </script>
 </body>
+
 </html>
