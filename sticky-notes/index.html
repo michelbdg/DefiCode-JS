@@ -21,15 +21,24 @@
         <div id="container-notes">
             <button class="add-note" type="button">+</button>
         </div>
+    </div>
 
         <!-- Pour créer une to-do-list -->
         <div class="container-list">
             <header>
                 <h3>To Do List</h3>
-                <form id="new-task-form"></form> 
-                <input type="text" id ="new-task-input" placeholder="Qu'avez vous de prévu ?"/>
+                <form id="new-task-form">
+                <input 
+                    type="text" 
+                    id ="new-task-input" 
+                    name="new-task-input"
+                    placeholder="Qu'avez vous de prévu ?"/>
                 
-                <input type="submit" id="new-task-submit" value="Rajouter une tache"/>
+                <input 
+                    type="submit" 
+                    id="new-task-submit" 
+                    value="Rajouter une tache"/>
+                </form> 
             </header>
 
             <main>
@@ -39,7 +48,11 @@
                     <div id="tasks">
                         <div class="task">
                             <div class="content">
-                                <input type="text" class="text" value="Exemple" readonly/>
+                                <input 
+                                    type="text" 
+                                    class="text" 
+                                    value="Exemple" 
+                                    readonly/>
                             </div>
                             <div class="actions">
                                 <button class="edit">Editer</button>
@@ -51,7 +64,7 @@
                 
             </main>
         </div>
-    </div>
+ 
 
 
 
