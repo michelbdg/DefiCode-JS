@@ -1,4 +1,4 @@
-//Déclaration des constantes et variable au chargementy de la page
+//Déclaration des constantes et variable au chargement de la page
 window.addEventListener('load', () => {
     const form = document.querySelector('#new-task-form');
     const input = document.querySelector('#new-task-input');
@@ -10,7 +10,8 @@ window.addEventListener('load', () => {
 
 
         const task = input.value;
-
+    
+    //Envoie une alert si la tach est vide. EMpêche lm'utilisateur de rentrer des tachs vides
         if (!task) {
             alert("Veuillez remplir une tâche avant de valider");
             return;
@@ -34,7 +35,7 @@ window.addEventListener('load', () => {
         task_input_el.value = task;
         task_input_el.setAttribute("readonly", "readonly");
 
-        //Fait de l'input créé au dessus un enfant de la div avec content(on est juste en train de reproduire les même balises que l'exmple dans le HTML avec le même ordre)
+        //Fait de l'input créé au dessus un enfant de la div avec content(on est juste en train de reproduire les mêmes balises que l'exemple dans le HTML avec le même ordre)
         task_content_el.appendChild(task_input_el);
 
         //Création de la div avec la classe actions
@@ -77,7 +78,7 @@ window.addEventListener('load', () => {
             }
         });
 
-        //On a juste besoin de supprimer la tach lié au bouton pour le boutton supprimer
+        //On a juste besoin de supprimer la tache lié au bouton pour faire fonctionner le boutton supprimer
         task_delete_el.addEventListener('click', () => {
             liste_el.removeChild(task_el);
         })
