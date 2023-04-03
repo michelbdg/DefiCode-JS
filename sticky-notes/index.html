@@ -55,19 +55,27 @@
 
         <!-- Pour créer une to-do-list -->
         <div class="container-list">
-            <header>
+            <header class="container-list-header">
                 <h3>To Do List</h3>
-                <form id="new-task-form"></form> 
-                <input type="text" id ="new-task-input" placeholder="Qu'avez vous de prévu ?"/>
+                <form id="new-task-form">
+                <input 
+                type="text" 
+                id ="new-task-input"
+                name="new-task-input" 
+                placeholder="Qu'avez vous de prévu ?"/>
                 
-                <input type="submit" id="new-task-submit" value="Rajouter une tache"/>
+                <input 
+                type="submit" 
+                id="new-task-submit" 
+                value="Rajouter une tache"/>
+            </form> 
             </header>
 
             <main>
                 <section class="task-list">
                     <h4>Taches</h4>
                     <div id="tasks">
-                        <div class="task">
+                        <!----<div class="task">
                             <div class="content">
                                 <input type="text" class="text" value="Exemple" readonly/>
                             </div>
@@ -75,7 +83,7 @@
                                 <button class="edit">Editer</button>
                                 <button class="delete">Supprimer</button>
                             </div>
-                        </div>
+                        </div>------>
                     </div>
                 </section>
             </main>

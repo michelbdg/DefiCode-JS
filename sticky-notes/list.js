@@ -75,6 +75,7 @@ window.addEventListener('load', () => {
             else{
                 task_input_el.setAttribute("readonly", "readonly");
                 task_input_el.innerText = "Edit";
+                task_edit_el.innerText = "Modifier"
             }
         });
 
