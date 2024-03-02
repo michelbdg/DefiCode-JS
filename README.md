@@ -1,4 +1,4 @@
-# Defi Javscript
+# Défi Javascript
 
 ## Description 
 
